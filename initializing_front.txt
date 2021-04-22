@@ -1,1 +1,3 @@
 initializing_front
+
+display master
