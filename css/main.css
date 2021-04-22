@@ -422,9 +422,165 @@ margin-top: 10px;
 ------------------------------------------- movie page --------------------------------------------
 --------------------------------------------------------------------------------------------------- */
 
+.app-movie {
+    /* background-color: rgba(0, 255, 115, 0.562); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+    align-content: flex-start; 
+    width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
+}
 
+.app-movie__image {
+/* background-color: blue; */
+width: 20%;
+}
 
+.app-image {
+    width: 100%;
+}
+
+.app-movie__description {
+    
+}
+.app-description {
+    /* background-color: rgba(255, 0, 255, 0.562); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start; 
+    margin-left: 10px;
+    width: 170%;
+}
+.app-description__top {
+    
+}
+.app-top {
+    /* background-color: rgba(229, 255, 0, 0.562); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: flex-start; 
+    padding-bottom: 20px;
+}
+.app-top__release {
+    
+}
+.app-release-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.app-release-input {
+    
+}
+.app-top__duration {
+    
+}
+.app-duration-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.app-duration-input {
+    
+}
+.app-top__genre {
+    
+}
+.app-genre-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.app-genre-input {
+    
+}
+.app-description__bottom {
+    
+}
+.app-bottom__producer {
+    padding-bottom: 20px;
+
+}
+.app-producer-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.app-producer-input {
+    
+}
+.app-bottom__actor {
+    
+}
+.app-actor-title {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.app-actor-input {
+    
+}
+.app-bottom__synopsis {
+    padding-bottom: 50px;
+}
+.app-synopsis-title {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 2em;
+}
+.app-synopsis-input {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+ /* -------------------------- commentaires / contact ------------------- */
+
+ .fa-star {
+    color: var(--medium-secondary-color);
+ }
+.fa-star>span {
+    margin-left: 10px;
+}
+
+ .app-text-area {
+    resize: none;
+    border-radius: 15px;
+    width: 430px;
+    height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: 5px 5px black;
+}
+
+.app-commentaire-bloc {
+    margin: 0px 50px 50px 0px;
+    padding-top: 10px;
+    background-color: var(--medium-grey-color);
+    border-radius: 15px;
+    box-shadow: 5px 5px var(--dark-grey-color);
+    width: 500px;
+    height: auto;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.app-text-bloc {
+margin: 0px;
+padding-top: 15px;
+padding-bottom: 10px;
+}
+
+.app-input {
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.app-submitted {
+    margin-left: 20px;
+}
 
 
 

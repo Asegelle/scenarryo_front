@@ -7,6 +7,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' href='../css/main.css'>
     <link rel='stylesheet' type='text/css' href='../css/variables.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="app-font-global">
@@ -35,7 +38,125 @@
     <!-- ------------------------------------------------------------------------------------------------->
     <main>
 
-    <div>Film</div>
+        <div class="app-title-booking">Harry Potter à l'école des sorciers</div>
+
+    <!-- flex box container main -->
+    <div class="app-movie">
+        <!-- content main image -->
+        <div class="app-movie__image">
+            <img src="../img/HP1_poster.jpg" class="app-image" title="image de profil" width="200px">
+        <!-- end content main image -->
+        </div>
+        <!-- content main description -->
+        <div class="app-movie__description">
+            <!-- flex box container description -->
+            <div class="app-description">
+                <!-- content description top -->
+                <div class="app-description__top">
+                    <!-- flex box container top -->
+                    <div class="app-top">
+                        <!-- content top release -->
+                        <div class="app-top__release">
+                            <div class="app-release-title">date de sortie :</div>
+                            <div class="app-release-input">2001-12-05</div>
+                        </div>
+                        <!-- content top duration -->
+                        <div class="app-top__duration">
+                            <div class="app-duration-title">durée :</div>
+                            <div class="app-duration-input">02:32:00</div>
+                        </div>
+                        <!-- content top genre -->
+                        <div class="app-top__genre">
+                            <div class="app-genre-title">genre :</div>
+                            <div class="app-genre-input">Fantastique</div>
+                        </div>
+                    <!-- end flex box container top -->
+                    </div>
+                <!-- end content description top -->
+                </div>
+                <!-- content description bottom -->
+                <div class="app-description__bottom">
+                    <div class="app-bottom__producer">
+                        <div class="app-producer-title">De :</div>
+                        <div class="app-producer-input">Chris Columbus</div>
+                    </div>
+                    <div class="app-bottom__actor">
+                        <div class="app-actor-title">Avec :</div>
+                        <div class="app-actor-input">Daniel Radcliffe, Rupert Grint, Emma Watson</div>
+                    </div>
+                <!-- end content description bottom -->
+                </div>
+            <!-- flex box container description -->
+            </div>
+        <!-- end content main description -->
+        </div>
+    <!-- end flex box container main -->
+    </div>
+
+    <div class="app-bottom__synopsis">
+        <div class="app-synopsis-title">Synopsis :</div>
+        <div class="app-synopsis-input">Orphelin, Harry Potter a été recueilli à contrecœur par son oncle Vernon et sa tante Pétunia, aussi cruels que mesquins, qui n'hésitent pas à le faire dormir dans le placard sous l'escalier. Constamment maltraité, il doit en outre supporter les jérémiades de son cousin Dudley, garçon cupide et archi-gâté par ses parents. De leur côté, Vernon et Pétunia détestent leur neveu dont la présence leur rappelle sans cesse le tempérament "imprévisible" des parents du garçon et leur mort mystérieuse.
+        À l'approche de ses 11 ans, Harry ne s'attend à rien de particulier – ni carte, ni cadeau, ni même un goûter d'anniversaire. Et pourtant, c'est à cette occasion qu'il découvre qu'il est le fils de deux puissants magiciens et qu'il possède lui aussi d'extraordinaires pouvoirs. Quand on lui propose d'intégrer Poudlard, la prestigieuse école de sorcellerie, il trouve enfin le foyer et la famille qui lui ont toujours manqué… et s'engage dans l'aventure de sa vie.</div>
+    </div>
+
+
+
+    <!-- Partie commentaires -->
+    <div class="app-synopsis-title">Commentaires</div>
+
+    <form 
+    id='loginFormComment' 
+    name='loginFormComment' 
+    class="app-commentaire-bloc" 
+    onsubmit="return handleSubmitLoginFormComment()">
+        <label for="notation" class="app-text-bloc">donnez une note à ce film : </label>
+        <div class="app-input">
+            <input
+            type="radio" 
+            id="notation1" 
+            name="notation" 
+            value="1" />
+            <i class="fa fa-star"><span class=""></span></i>
+            <input 
+            type="radio"  
+            id="notation2"
+            name="notation" 
+            value="2" />
+            <i class="fa fa-star"></i><i class="fa fa-star"><span class=""></span></i>
+            <input 
+            type="radio"  
+            id="notation3"
+            name="notation" 
+            value="3" />
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"><span class=""></span></i>
+            <input 
+            type="radio"  
+            id="notation4"
+            name="notation" 
+            value="4" />
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"><span class=""></span></i>
+            <input 
+            type="radio"  
+            id="notation5"
+            name="notation" 
+            value="5" />
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i><i class="fa fa-star"><span class=""></span></i>
+        </div>
+        <label for="commentContent" class="app-text-bloc">Souhaitez vous laisser un commentaire ?</label>
+        <div class="app-input">
+            <textarea 
+            id="commentContent" 
+            name="commentContent" 
+            class='app-text-area' 
+            cols="60" 
+            rows="9" 
+            placeholder="Votre commentaire"></textarea>
+        </div>
+        <button type='submit'>Soumettre</button><span class='app-submitted' id="submittedComment"></span>
+    </form>
+
 
     </main>
     <!-- ------------------------------------------------------------------------------------------------->
