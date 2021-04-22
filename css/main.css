@@ -1,0 +1,309 @@
+
+/* ------------------------------------------------------------------------------------------------
+------------------------------------------- footer/header/global style ----------------------------
+--------------------------------------------------------------------------------------------------- */
+
+ /* -------------------------- header/global ----------------------------------- */
+
+.app-font-global {
+    font-family: 'Roboto', sans-serif;    
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--medium-main-color);
+    box-shadow: 0px 3px 3px black; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.app-header-left-empty {
+    width: 250px;
+    height: 100px;
+}
+.app-header-middle-logo {
+}
+.app-header-right-connection {
+    width: 250px;
+}
+
+.app-connection-button {
+    background-color: var(--medium-secondary-color);
+    color :var(--medium-main-color);
+    padding: 8px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px var(--dark-main-color);
+    text-decoration: none;
+    /* border-radius: 15px; */
+}
+.app-connection-button:hover {
+    background-color: var(--light-secondary-color);
+    box-shadow: 3px 3px 3px var(--dark-secondary-color);
+    color :black;
+}
+.app-connection-button:active {
+    transform: translateY(3px) translateX(3px);
+    box-shadow: 0px 0px 0px var(--dark-secondary-color);
+}
+
+.app-menu-background {
+    background-color: var(--medium-secondary-color);
+    color :white;
+    padding: 5px;
+    height: 45px;
+    box-shadow: 0px 3px 3px var(--dark-secondary-color);
+}
+
+.app-menu-background a {
+    background-color: var(--medium-main-color);
+    color :var(--medium-secondary-color);
+    padding: 8px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px black;
+    text-decoration: none;
+}
+
+.app-menu-background a:hover {
+    background-color: var(--light-main-color);
+    box-shadow: 3px 3px 3px var(--medium-main-color);
+    transition: 0.25s background-color 0.25s box-shadow;
+}
+
+.app-menu-background a:active{
+    transform: translateY(3px) translateX(3px);
+    box-shadow: 0px 0px var(--dark-secondary-color);
+} 
+
+ /* -------------------------- footer ----------------------------------- */
+
+ .app-footer-global-flex {
+    background-color: var(--medium-secondary-color);
+    color: var(--medium-main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-end;
+    align-content: flex-start;
+}
+
+.app-footer-left {
+    font-weight: bold;
+}
+
+.app-footer-left a {
+    font-weight: normal;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--medium-main-color);
+    font-size: 15px;
+}
+
+.app-footer-middle {
+    width: 400px;
+}
+
+.app-footer-right {
+    padding-bottom: 15px;
+}
+
+.app-perso-footer {
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* ------------------------------------------------------------------------------------------------
+------------------------------------------- Main page ---------------------------------------------
+--------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------
+------------------------------------------- In showing page ---------------------------------------
+--------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------
+------------------------------------------- booking page ------------------------------------------
+--------------------------------------------------------------------------------------------------- */
+
+.app-title-booking {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 40px;
+    color: var(--light-main-color);
+}
+
+.app-flex-box-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 50px 50px 50px;
+    
+}
+
+.app-flex-box-main-box-left {
+    width: 550px;
+}
+
+.app-flex-box-main-form {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.app-flex-box-main-box-left_text {
+    display: inline-block;
+    padding-top: 13px;
+    width: 180px;
+
+}
+.app-booking-select {
+    display: inline-block;
+}
+
+.app-flex-box-main-button {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: var(--light-main-color);
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    width: 210px;
+    border-radius: 15px;
+    position: sticky;
+    height: 45px;
+    margin-top: 0px;
+}
+
+.app-booking-button {
+    width: 100px;
+    height: 26px;
+    border-radius: 10px;
+}
+
+.fa-film {
+    margin-left: 20px;
+    padding: 0px 30px 0px 4px;
+    color: var(--dark-grey-color);
+    float:left;
+}
+.fa-calendar {
+    margin-left: 20px;
+    padding: 0px 30px 0px 4px;
+    color: var(--dark-grey-color);
+    float:left;
+}
+.fa-clock-o {
+    margin-left: 20px;
+    padding: 0px 30px 0px 4px;
+    color: var(--dark-grey-color);
+    float:left;
+}
+.fa-ticket {
+    margin-left: 20px;
+    padding: 0px 30px 0px 4px;
+    color: var(--dark-grey-color);
+    float:left;
+}
+
+.app-logo-booking-box {
+    background-color: var(--light-main-color);
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    width: 550px;
+    border-radius: 15px;
+    position: sticky;
+    height: 45px;
+    margin-top: 0px;
+}
+
+ .app-logo-booking {
+    display: block;
+    float: left;
+    width: 70px;
+    height: 38px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color:  var(--medium-secondary-color);  
+    margin-right: 20px; 
+    padding-top: 7px;
+    box-shadow: 3px 0px 3px black;
+} 
+
+.app-flex-box-main-box-middle {
+    /* background-color: rgba(255, 0, 149, 0.473); */
+}
+
+.app-booking-button-box {
+margin-right: 50px;
+margin-top: 10px;
+}
+
+.app-flex-box-main-box-right {
+    /* background-color: rgba(0, 153, 255, 0.473); */
+    width: 300px;
+}
+
+.app-flex-box-main-box-right-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    align-content: flex-start;
+    height: 300px;
+}
+
+.app-box-right-title {
+    font-size: 20px;
+    color: var(--medium-main-color);
+    font-weight: bold;
+}
+
+.app-box-right-producer {
+    font-size: 15px;
+    color: var(--medium-main-color);
+
+}
+
+.app-box-right-synopsis {
+    font-size: 15px;
+    color: var(--medium-main-color);
+    text-align: justify;
+}
+
+/* ------------------------------------------------------------------------------------------------
+------------------------------------------- movie page --------------------------------------------
+--------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------
+------------------------------------------- contact page ------------------------------------------
+--------------------------------------------------------------------------------------------------- */

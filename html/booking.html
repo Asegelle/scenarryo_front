@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Cinéma SCENARRY'O</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' href='../css/variables.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="app-font-global">
+
+    <!-- ------------------------------------------------------------------------------------------------->
+    <!-- --------------------------------------- header -------------------------------------------------->
+    <!-- ------------------------------------------------------------------------------------------------->
+    <header>
+        <div class="app-header-left-empty"></div>
+        <img src="../img/logo_black_gold.png" alt="logo" class="app-header-middle-logo" />
+        <div class="app-header-right-connection">
+            <a href="" class="app-connection-button">Connexion</a>
+            <a href="" class="app-connection-button">Inscription</a>
+        </div>
+    </header>
+
+    <nav class="app-menu-background">
+        <a href="index.html">Accueil</a>
+        <a href="in_showing.html">A l'affiche</a>
+        <a href="booking.html">Réservation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------------------->
+    <!-- --------------------------------------- main ---------------------------------------------------->
+    <!-- ------------------------------------------------------------------------------------------------->
+    <main>
+        
+        <div class="app-title-booking">Réservation</div>
+
+        <!-- flex box global -->
+        <div class="app-flex-box-main">
+            <!-- box left -->
+            <div class="app-flex-box-main-box-left">
+                <!-- flex box form -->
+                <form class="app-flex-box-main-form">
+                    <!-- box movie -->
+                    <div class="app-logo-booking-box">
+                        <div class="app-logo-booking"><i class="fa fa-film fa-2x"></i></div>
+                        <div class="app-flex-box-main-box-left_text">Sélection du film : </div>
+                        <div class="app-booking-select">
+                            <select>
+                                <option value="0">choisir un film</option>
+                                <option value="1">Harry Potter à l'école des sorciers</option>
+                                <option value="2">Harry Potter et le prisonnier d'Azkaban</option>
+                            </select>
+                        </div>
+                    <!-- end box movie -->
+                    </div>
+
+                    <!-- box day -->
+                    <div class="app-logo-booking-box">
+                        <div class="app-logo-booking"><i class="fa fa-calendar fa-2x"></i></div>
+                        <div class="app-flex-box-main-box-left_text">Sélection du jour : </div>
+                        <div class="app-booking-select">
+                            <input type="date" />
+                        </div>
+                    <!-- end box day -->
+                    </div>
+
+                    <!-- box movie show -->
+                    <div class="app-logo-booking-box">
+                        <div class="app-logo-booking"><i class="fa fa-clock-o fa-2x"></i></div>
+                        <div class="app-flex-box-main-box-left_text">Sélection de la séance : </div>
+                        <div class="app-booking-select">
+                            <select>
+                                <option value="0">choisir une séance</option>
+                                <option value="0">10:00 - 12:00</option>
+                                <option value="1">12:00 - 14:00</option>
+                                <option value="2">14:00 - 16:00</option>
+                                <option value="0">16:00 - 18:00</option>
+                                <option value="1">18:00 - 20:00</option>
+                                <option value="2">20:00 - 22:00</option>
+                            </select>
+                        </div>
+                    <!-- end box movie show -->
+                    </div>
+
+                    <!-- box button -->
+                    <div>
+                        <!-- flex box button -->
+                        <div class="app-flex-box-main-button">
+                            <div class="app-logo-booking"><i class="fa fa-ticket fa-2x"></i></div>
+                            <div class="app-booking-button-box">
+                                <button type='submit' class="app-booking-button">Réserver</button>
+                            </div>
+                        <!-- end flex box button -->
+                        </div>
+                    <!-- end box button -->
+                    </div>
+                <!-- end flex box form -->
+                </form>
+            <!-- end box left -->
+            </div>
+            <!-- box middle -->
+            <div class="app-flex-box-main-box-middle">
+  
+            <img src="../img/HP1_poster.jpg" class="app-image" title="image de profil" width="200px">
+
+            <!-- end box middle -->
+            </div>
+
+            <!-- box right -->
+            <div class="app-flex-box-main-box-right">
+                <!-- flex box right -->
+                <div class="app-flex-box-main-box-right-infos">
+                    <div class="app-box-right-title">Harry Potter à l'école des sorciers</div>
+                    <div class="app-box-right-producer">Réalisateur : Chris Columbus</div>
+                    <div class="app-box-right-synopsis">Synopsis : Orphelin, Harry Potter a été recueilli à contrecœur par son oncle Vernon et sa tante Pétunia, aussi cruels que mesquins, qui n'hésitent pas à le faire dormir dans le placard sous l'escalier. Constamment maltraité, il doit en outre supporter les jérémiades de son cousin Dudley, garçon cupide et archi-gâté par ses parents. De leur côté, Vernon et Pétunia détestent leur neveu dont la présence leur rappelle sans cesse le tempérament "imprévisible" des parents du garçon et leur mort mystérieuse...</div>
+                <!-- end flex box right -->
+                </div>
+            <!-- end box right -->
+            </div>
+        <!-- end flex box global -->
+        </div>
+
+
+    </main>
+    <!-- ------------------------------------------------------------------------------------------------->
+    <!-- -------------------------------------- footer --------------------------------------------------->
+    <!-- ------------------------------------------------------------------------------------------------->
+    <footer class='app-footer-global-flex'>
+
+        <!-- Partie menu -->
+        <div class='app-footer-left'>
+            <ul>
+                <!-- <a href="#En bref" title='En bref'></a> -->
+                <p>Menu : </p>
+                <a href="index.html" title='Accueil'>
+                    <li> > Accueil</li>
+                </a>
+                <a href="in_showing.html" title='À l&#39affiche'>
+                    <li> > À l'affiche</li>
+                </a>
+                <a href="booking.html" title='Réservation'>
+                    <li> > Réservation</li>
+                </a>
+                <a href="contact.html" title='Contact'>
+                    <li> > Contact</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- Partie infos perso -->
+        <div class='app-footer-middle'>
+            <ul class="app-perso-footer">
+                <li>lien reseau social</li>
+                <li>scenarry'o@hotmail.fr</li>
+                <li>adresse</li>
+                <li>telephone</li>
+            </ul>
+        </div>
+
+        <!-- Partie copyright -->
+        <div class='app-footer-right'> Copyright &copy; 2021, Tous droits réservés. scenARRY'o</div>
+
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
