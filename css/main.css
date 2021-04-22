@@ -24,8 +24,8 @@ header {
     width: 250px;
     height: 100px;
 }
-.app-header-middle-logo {
-}
+/* .app-header-middle-logo {
+} */
 .app-header-right-connection {
     width: 250px;
 }
@@ -325,8 +325,48 @@ h2{
 } 
 
 .app-flex-box-main-box-middle {
-    /* background-color: rgba(255, 0, 149, 0.473); */
+    width: 14%;
+    height: 325px;
+    text-align: center;
 }
+
+
+.app-button-display-booking {
+    border-radius: 4px;
+    background-color :var(--medium-secondary-color);
+    border: none;
+    color: var(--dark-main-color);
+    text-align: center;
+    font-size: 18px;
+    padding: 7px;
+    width: 45%;
+    
+    transition: all 0.5s;
+    cursor: pointer;
+ }
+.app-button-display-booking span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.app-button-display-booking span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.app-button-display-booking:hover span {
+    padding-right: 25px;
+  }
+.app-button-display-booking:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
 
 .app-booking-button-box {
 margin-right: 50px;
@@ -363,7 +403,20 @@ margin-top: 10px;
     font-size: 15px;
     color: var(--medium-main-color);
     text-align: justify;
-}
+    overflow: hidden;
+    position: relative; 
+    line-height: 20px;
+    height: 220px; 
+    text-align: justify;  
+    padding-right: 15px;
+  }
+
+  .app-box-right-synopsis:before {
+    content: '...';
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
 
 /* ------------------------------------------------------------------------------------------------
 ------------------------------------------- movie page --------------------------------------------
