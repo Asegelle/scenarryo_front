@@ -132,6 +132,78 @@ header {
 
 
 
+
+
+/**************************** Style Partie A l'affiche  ***********************************/
+
+h2{
+    color: var(--dark-secondary-color);
+}
+
+.app-all-movies-posters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+
+
+.app-poster{
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.app-poster img{
+    width: 100%;
+    
+}
+
+.app-button-display {
+  border-radius: 4px;
+  background-color :var(--medium-secondary-color);
+  border: none;
+  color: var(--dark-main-color);
+  text-align: center;
+  font-size: 18px;
+  padding: 7px;
+  width: 45%;
+  
+  transition: all 0.5s;
+  cursor: pointer;
+  
+}
+
+.app-button-display span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.app-button-display span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.app-button-display:hover span {
+  padding-right: 25px;
+}
+
+.app-button-display:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
 /* ------------------------------------------------------------------------------------------------
 ------------------------------------------- In showing page ---------------------------------------
 --------------------------------------------------------------------------------------------------- */
