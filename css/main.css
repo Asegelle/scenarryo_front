@@ -4,6 +4,41 @@
 --------------------------------------------------------------------------------------------------- */
 
  /* -------------------------- header/global ----------------------------------- */
+main{
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+h2{
+    
+    font-size: 40px;
+    color: var(--medium-main-color);
+}
+
+h3{
+    
+    font-size: 25px;
+    color: var(--light-main-color);
+}
+.app-form {
+    
+
+}
+
+.app-form__item{
+    background-color: var(--light-main-color);
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    width: 50%;
+    border-radius: 15px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
 
 .app-font-global {
     font-family: 'Roboto', sans-serif;    
@@ -136,9 +171,7 @@ header {
 
 /**************************** Début Style Partie A l'affiche  ***********************************/
 
-h2{
-    color: var(--dark-secondary-color);
-}
+
 
 .app-all-movies-posters{
     display: flex;
@@ -386,9 +419,65 @@ margin-top: 10px;
 
 
 /**************************** Début Style Partie GPS  ***********************************/
-
-.app-map{
+.app-map--padding{
+    
+}
+.app-map__item--size{
     height:400px;
-    width: 40%;
+    
+    max-width: 100%;
+    
 }
 /**************************** Fin Style Partie GPS  ***********************************/
+
+.app-form {
+    
+
+}
+
+.app-form__item{
+    background-color: var(--light-main-color);
+    box-shadow: 3px 3px 3px black;
+    color: white;
+    width: 50%;
+    border-radius: 15px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.app-form-contact{
+    max-width: 60%; 
+    min-width: 60%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.app-form-contact__item{
+    margin-bottom: 20px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.app-form-contact__item--button{
+    border: none;
+    color: var(--background-color);
+    font-size: 1.2em;
+    background-color: var(--light-main-color);
+    width: auto;
+    align-self: flex-end;
+}
+
+.app-form-label{
+    font-size: 1.1em;
+}
+.app-form-input{
+    height: 1.7em;
+    width: inherit;
+}
