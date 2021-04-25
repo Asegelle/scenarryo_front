@@ -171,71 +171,47 @@ header {
 
 /**************************** Début Style Partie A l'affiche  ***********************************/
 
-
-
-.app-all-movies-posters{
+.app-main-posters{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    
+    
     
 }
-
-
-.app-poster{
-    width: 200px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.app-card{
+    width: 35%;
+    padding:10px; /*A voir après */
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
     
 }
-
-.app-poster img{
+.app-card__image img{
     width: 100%;
-    
 }
 
-.app-button-display {
-  border-radius: 4px;
-  background-color :var(--medium-secondary-color);
+.app-card__title a{
+    color: var(--medium-secondary-color);
+    font-size: 22px;
+}
+.app-card__btn{
   border: none;
-  color: var(--dark-main-color);
+  outline: 0;
+  padding: 12px;
+  color: var(--light-secondary-color);
+  background-color: var(--light-main-color);
   text-align: center;
+  cursor: pointer;
+  width: 100%;
   font-size: 18px;
-  padding: 7px;
-  width: 45%;
-  
-  transition: all 0.5s;
-  cursor: pointer;
-  
+}
+.app-card__btn:hover{
+    opacity: 0.7;
 }
 
-.app-button-display span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
 
-.app-button-display span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.app-button-display:hover span {
-  padding-right: 25px;
-}
-
-.app-button-display:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
 /**************************** Fin Style Partie A l'affiche  ***********************************/
 
