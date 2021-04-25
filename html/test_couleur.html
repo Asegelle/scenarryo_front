@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='../css/main.css'>
+    <link rel='stylesheet' type='text/css' href='../css/variables.css'>
+    <style>
+        /*    exemple pour la visualisation des couleurs fichier test_couleur.html **/
+            .flex-parent{
+                display: flex;
+                color: white;
+            }
+
+            .flex-child{
+                width: 300px;
+            }
+            .main-color,.proposition-color{
+                width: 100%;
+                height: 70px;
+            }
+            .mlight{
+                background-color: var(--light-main-color);
+            }
+            .mmedium{
+                background-color: var(--medium-main-color);
+            }
+            .mdark{
+                background-color: var(--dark-main-color);
+            }
+            .plight{
+                background-color: var(--light-proposition-color);
+            }
+            .pmedium{
+                background-color: var(--medium-proposition-color);
+            }
+            .pdark{
+                background-color: var(--dark-proposition-color);
+            }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-parent">
+        <div class="flex-child">
+            <div class="main-color mlight"><p>Light</p></div>
+            <div class="main-color mmedium"><p>Medium</p></div>
+            <div class="main-color mdark"><p>dark</p></div>
+
+        </div>
+        <div class="flex-child">
+            <div class="proposition-color plight "><p>Light</p></div>
+            <div class="proposition-color pmedium "><p>Medium</p></div>
+            <div class="proposition-color pdark"><p>dark</p></div>
+        </div>
+    </div>
+    
+</body>
+</html>
